@@ -39,4 +39,4 @@ Example:
 ```elm
 div [] []
 ```
-Its just a function that takes two string lists as a argument!
+Its just a function that takes two lists!

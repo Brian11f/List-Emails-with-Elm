@@ -62,11 +62,13 @@ update msg model =
       (model, loadEmails)
     LoadedEmails (Ok emails) ->
       (emails, Cmd.none)
-      (filterEmails model)
     LoadedEmails (Err _) ->
       (model, Cmd.none)
 
 -- Compare Function
+-- This will work for a simple one dementional array. But my data type is a record
+-- of key value pairs or a "tuple". I am not sure how to make this function check a
+-- a key value pair with recursion in Elm.
 filterEmails : List comparable -> List comparable
 filterEmails list =
   uniqueHelp Set.empty list

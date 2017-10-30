@@ -22,13 +22,14 @@
 npm install -g elm-test elm-live@2.6.1
 ```
 
+## Building
+
 8. Run Elms package installer
 ```bash
 elm-package install --yes
 ```
 
-## Building
-
+9. Run Elms live reloader
 ```bash
 elm-live Main.elm --open --pushstate --output=elm.js
 ```

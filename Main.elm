@@ -6,7 +6,6 @@ import Html.Events exposing (onClick)
 
 
 -- MAIN
--- main :  Program Never Model Msg
 main =
   Html.program
     { init = init
@@ -42,7 +41,7 @@ init =
 loadEmails : Cmd Msg
 loadEmails =
   Http.send LoadedEmails
-    (Http.get "https://gist.githubusercontent.com/Brian11f/c429d64efc5e3297282259b7eef39c35/raw/fa30dec8137bc34ba7ec0c08d61a6feaa9bf65f6/Emails" decodeEmailList)
+    (Http.get "https://raw.githubusercontent.com/Brian11f/List-Emails-with-Elm/master/ListOfEmails.json" decodeEmailList)
 decodeEmail : Decode.Decoder Email
 decodeEmail =
     Decode.map Email

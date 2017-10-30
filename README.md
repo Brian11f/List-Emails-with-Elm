@@ -37,7 +37,7 @@ elm-live Main.elm --open --pushstate --output=elm.js
 
 I have never used a functional language before and I wanted to challenge myself while learning something new. What I have learned is that functional programing is a hard thing to pick up in a single weekend. What I am going to bring more into my day to day programing is immutable data and small reusable functions with minimal side effects as possible.
 
-Some pain points with Elm are the language is still very fluid. The syntax is a hard reading coming from javascript but it is growing on me. That said the HTML function syntax make enormous amount of sense for Elm.
+Some pain points with Elm are the language is still very fluid. The syntax is a hard reading coming from javascript but it is growing on me. That said the HTML function syntax makes alot of sense for Elm.
 Example:
 ```elm
 div [] []
